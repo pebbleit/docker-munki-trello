@@ -13,4 +13,4 @@ RUN apt-get update && \
     pip install trello && \
     git clone https://github.com/pebbleit/munki-trello.git /munki-trello && \
     git clone https://github.com/munki/munki.git /munki-tools
-CMD python /munki-trello/munki-trello.py --key $KEY --token $TOKEN --boardid $BOARDID --to-dev-list $TO_DEV_LIST --dev-list $DEV_LIST --to-test-list $TO_TEST_LIST --test-list $TEST_LIST --to-prod-list $TO_PROD_LIST --repo-path $MUNKI_PATH --suffix $SUFFIX --makecatalogs /munki-tools/code/client/makecatalogs
+CMD python /munki-trello/munki-trello.py --key $KEY --token $TOKEN --boardid $BOARDID --to-dev-list "$TO_DEV_LIST" --dev-list "$DEV_LIST" --to-test-list "$TO_TEST_LIST" --test-list "$TEST_LIST" --to-prod-list "$TO_PROD_LIST" --repo-path "$MUNKI_PATH" --suffix "$SUFFIX" --makecatalogs /munki-tools/code/client/makecatalogs
