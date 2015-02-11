@@ -30,7 +30,3 @@ $ docker run --rm \
   -e DOCKER_TRELLO_BOARDID=abc123 \
   pebbleit/munki-trello
 ```
-
-#TODO
-
-* Add support for SQLite and MySQL
